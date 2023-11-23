@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: conf-map
+data:
+  username: my_react_app
+  company_name: ITMO
