@@ -6,7 +6,7 @@ Group: K4112c
 Author: Tasmaev Igor Aleksandrovich  
 Lab: Lab1  
 Date of create: 09.11.2023  
-Date of finished: 
+Date of finished: 10.11.2023
 
 ### Цель работы
 

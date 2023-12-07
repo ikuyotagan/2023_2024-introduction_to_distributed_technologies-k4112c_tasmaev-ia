@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-dep
+spec:
+  replicas: 2
+  selector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values:
+          - front
+  template:
+    metadata:
+      labels:
+        creation_method: deployment
+        app: front
+    spec:
+      containers:
+        - image: ifilyaninitmo/itdt-contained-frontend:master
+          name: react
+          ports:
+            - name: http
+              containerPort: 3000
+          env:
+            - name: REACT_APP_USERNAME
+              value: my_react_app
+            - name: REACT_APP_COMPANY_NAME
+              value: ITMO
